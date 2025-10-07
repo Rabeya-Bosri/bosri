@@ -3,14 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Rabeya Bosri</title>
-  <meta name="description" content="Rabeya Bosri — MSc student at the University of Alberta. Research: usable privacy, privacy‑preserving ML, fairness in high‑risk AI." />
+  <title>Rabeya Bosri — Academic Website</title>
   <meta name="author" content="Rabeya Bosri" />
-  <meta property="og:title" content="Rabeya Bosri — MSc Researcher" />
-  <meta property="og:description" content="Usable privacy • Privacy‑preserving ML • Fairness in high‑risk AI" />
-  <meta property="og:type" content="website" />
-  <meta property="og:image" content="/images/bosri.jpeg" />
-  <meta name="twitter:card" content="summary_large_image" />
   <link rel="icon" href="/assets/favicon.ico" />
   <style>
     :root{
@@ -28,166 +22,138 @@
     .brand{font-weight:700; letter-spacing:.2px}
     nav a{margin-left:1rem; text-decoration:none; color:var(--fg)}
     nav a:hover, nav a:focus{outline:none; color:var(--link)}
-    .hero{display:grid; grid-template-columns:120px 1fr; gap:1.25rem; padding:2.5rem 0 1.25rem}
-    .hero img{width:120px; height:120px; object-fit:cover; border-radius:14px; border:1px solid var(--border)}
     h1{font-size:1.9rem; line-height:1.2; margin:.2rem 0}
     h2{font-size:1.35rem; margin:2.2rem 0 .8rem}
     h3{font-size:1.05rem; margin:1rem 0 .25rem}
+    h4{margin:.6rem 0 .3rem; font-size:1rem}
     p{margin:.5rem 0}
     .muted{color:var(--muted)}
-    .chip{display:inline-flex; align-items:center; gap:.4rem; padding:.25rem .6rem; border:1px solid var(--border); border-radius:999px; background:var(--card)}
-    .grid{display:grid; gap:1rem}
-    .grid-2{grid-template-columns:repeat(2, minmax(0,1fr))}
-    @media (max-width:760px){ .hero{grid-template-columns:1fr} .grid-2{grid-template-columns:1fr} nav{display:none} }
-    .card{border:1px solid var(--border); background:var(--card); border-radius:14px; padding:1rem}
-    .card h3{margin-top:.25rem}
-    .card a{color:var(--link); text-decoration:none}
-    .prose a{color:var(--link)}
+    .card{border:1px solid var(--border); background:var(--card); border-radius:14px; padding:1rem; margin:.8rem 0}
     .list{margin:0; padding-left:1.15rem}
     .list li{margin:.35rem 0}
     .btn{display:inline-block; padding:.5rem .8rem; border-radius:10px; border:1px solid var(--border); text-decoration:none; color:var(--fg)}
     .btn:hover{border-color:var(--ring); box-shadow:0 0 0 3px color-mix(in srgb, var(--ring) 30%, transparent)}
     footer{border-top:1px solid var(--border); margin-top:2rem; padding:1rem 0 2.5rem; color:var(--muted)}
-    .badge{font-size:.85rem; padding:.1rem .5rem; border-radius:6px; border:1px solid var(--border)}
-    .nowrap{white-space:nowrap}
-    .pub{margin-bottom:1rem}
-    .pub .title{font-weight:600}
-    .kbd{font-variant-numeric:tabular-nums}
+    a{color:var(--link)}
   </style>
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Rabeya Bosri",
-    "url": "https://rabeya-bosri.github.io/bosri/",
-    "jobTitle": "MSc Student",
-    "affiliation": {"@type":"Organization","name":"University of Alberta"},
-    "knowsAbout": ["usable privacy", "privacy-preserving machine learning", "algorithmic fairness", "federated learning"],
-    "sameAs": [
-      "https://scholar.google.com/", 
-      "https://www.linkedin.com/"
-    ]
-  }
-  </script>
 </head>
 <body>
   <header>
-    <div class="container nav" role="navigation" aria-label="Site navigation">
+    <div class="container nav">
       <div class="brand">Rabeya Bosri</div>
       <nav>
         <a href="#about">About</a>
         <a href="#research">Research</a>
         <a href="#publications">Publications</a>
         <a href="#teaching">Teaching</a>
-        <a href="#journal.html">Journey Journal</a>
-        <a href="#news">News</a>
+        <a href="#cv">Failure Resume</a>
+        <a href="#notes">Notes</a>
         <a href="#contact">Contact</a>
       </nav>
     </div>
   </header>
 
   <main class="container">
-    <section class="hero" id="about">
-      <img src="/assets/headshot.jpg" alt="Portrait of Rabeya Bosri" />
-      <div>
-        <h1>Rabeya Bosri</h1>
-        <p class="muted">MSc (thesis‑based), <span class="nowrap">University of Alberta</span> • Supervisor: <a href="https://bkacsmar.github.io/" target="_blank" rel="noopener">Bailey Kacsmar</a></p>
-        <p>My research sits at the intersection of <strong>usable privacy</strong> and <strong>privacy‑preserving machine learning</strong>, with a focus on <em>fairness in high‑risk AI</em> (hiring, parole, lending, insurance) and <em>federated learning privacy</em>.</p>
-        <p>
-          <a class="btn" href="mailto:rabeya.bosri@ualberta.ca">Email</a>
-          <a class="btn" href="https://scholar.google.com/" target="_blank" rel="noopener">Google Scholar</a>
-          <a class="btn" href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
-          <a class="btn" href="/assets/Rabeya_Bosri_CV.pdf" target="_blank" rel="noopener">CV</a>
-        </p>
-        <p class="muted">Keywords: usable privacy • differentially private FL • membership inference • human‑centred evaluation</p>
-      </div>
-    </section>
-
-    <section id="news">
-      <h2>News & Upcoming</h2>
-      <ul class="list kbd">
-        <li><span class="badge">2025‑05‑29</span> Images of Research Exhibition, UAlberta Library — semi‑finalist; opening at 14:00 MST, DSC, Cameron Library (2F).</li>
-        <li><span class="badge">2025‑04‑15</span> Preprint: <em>User‑Perceived Trade‑offs in High‑Risk AI</em> (under review).</li>
-      </ul>
-    </section>
-
-    <section id="research">
-      <h2>Research</h2>
-      <div class="grid grid-2">
-        <article class="card">
-          <div class="chip">Human‑centred ML</div>
-          <h3>Perception of Machine‑Learning Designs</h3>
-          <p>How end‑users prioritize <strong>privacy</strong>, <strong>fairness</strong>, and <strong>robustness</strong> in high‑stakes applications; mixed‑methods (N≈200 per scenario).</p>
-          <p class="muted">PI: Rabeya Bosri · Supervisor: Bailey Kacsmar · Collaborators: Vasisht Duddu, Anna Lorimer</p>
-        </article>
-        <article class="card">
-          <div class="chip">Privacy in FL</div>
-          <h3>Membership Inference in Federated Learning</h3>
-          <p>Evaluating DP‑SGD guarantees under <em>non‑IID</em> client data and proposing <em>distribution‑aware privacy</em> notions inspired by Pufferfish.</p>
-          <p class="muted">PI: Rabeya Bosri · Supervisor: Bailey Kacsmar · Collaborator: Akemi Izuko</p>
-        </article>
-        <article class="card">
-          <div class="chip">Privacy & Society</div>
-          <h3>Cross‑Cultural Privacy on Social Media</h3>
-          <p>Comparative study of sharing norms and privacy perceptions across cultural contexts in social platforms.</p>
-          <p class="muted">Co‑PI: Rabeya Bosri &amp; Jialiang (Chuck) Yan</p>
-        </article>
-      </div>
+    <section id="about">
+      <h1>Rabeya Bosri</h1>
+      <p class="muted">MSc (thesis‑based), University of Alberta · Supervisor: <a href="https://bkacsmar.github.io/">Bailey Kacsmar</a></p>
+      <p>Research: usable privacy · privacy‑preserving ML · fairness in high‑risk AI · federated learning privacy.</p>
+      <p>
+        <a class="btn" href="mailto:bosri@ualberta.cs">Email</a>
+        <a class="btn" href="https://scholar.google.ca/citations?view_op=list_works&hl=en&hl=en&user=mUgZ1usAAAAJ&sortby=pubdate" target="_blank">Google Scholar</a>
+        <a class="btn" href="/assets/Rabeya_Bosri_CV.pdf" target="_blank">CV</a>
+      </p>
     </section>
 
     <section id="publications">
       <h2>Publications</h2>
-      <div class="pub">
-        <div class="title">Towards a Privacy-Preserving Voting System Through Blockchain Technologies</div>
-        <div class="muted">R. Bosri, A. R. Uzzal, A. A. Omar, A. S. M. T. Hasan, M. Z. A. Bhuiyan · IEEE DASC/PiCom/CBDCom/CyberSciTech 2019 · pp. 602–608 · <a href="https://doi.org/10.1109/DASC/PiCom/CBDCom/CyberSciTech.2019.00116" target="_blank" rel="noopener">DOI</a></div>
-      </div>
-      <div class="pub">
-        <div class="title">Towards Privacy-Preserving Recommender System with Blockchains</div>
-        <div class="muted">A. A. Omar, R. Bosri, M. S. Rahman, N. Begum, M. Z. A. Bhuiyan · Dependability in Sensor, Cloud, and Big Data Systems and Applications (Springer) · 2019 · pp. 106–118</div>
-      </div>
-      <div class="pub">
-        <div class="title">HIDEchain: A User-Centric Secure Edge Computing Architecture for Healthcare IoT Devices</div>
-        <div class="muted">R. Bosri, A. R. Uzzal, A. Al Omar, M. Z. A. Bhuiyan, M. S. Rahman · IEEE INFOCOM Workshops 2020 · pp. 376–381 · <a href="https://doi.org/10.1109/INFOCOMWKSHPS50562.2020.9162729" target="_blank" rel="noopener">DOI</a></div>
-      </div>
-      <div class="pub">
-        <div class="title">Integrating Blockchain With Artificial Intelligence for Privacy-Preserving Recommender Systems</div>
-        <div class="muted">R. Bosri, M. S. Rahman, M. Z. A. Bhuiyan, A. Al Omar · IEEE Transactions on Network Science and Engineering · 2021 · 8(2):1009–1018 · <a href="https://doi.org/10.1109/TNSE.2020.3031179" target="_blank" rel="noopener">DOI</a></div>
-      </div>
-      <div class="pub">
-        <div class="title">Towards A Transparent and Privacy-Preserving Healthcare Platform with Blockchain for Smart Cities</div>
-        <div class="muted">A. Al Omar, A. K. Jamil, M. S. H. Nur, M. M. Hasan, R. Bosri, M. Z. A. Bhuiyan, M. S. Rahman · IEEE TrustCom 2020 · pp. 1291–1296 · <a href="https://doi.org/10.1109/TrustCom
+      <!-- Already filled from earlier update -->
+    </section>
 
     <section id="teaching">
-      <h2>Teaching & Mentorship</h2>
-      <ul class="list">
-        <li>Proctor (Accessibility/Accommodations), University of Alberta (2024–2025).</li>
-        <li>Guest sessions on usable privacy & fairness in ML (materials on request).</li>
+      <h2>Teaching</h2>
+      <h3>Fall 2025</h3>
+      <ul>
+        <li>Teaching Assistant, University of Alberta, Canada</li>
+        <li>CMPUT 272: Formal Systems and Logic in Computing Science</li>
+      </ul>
+      <h3>Winter 2025</h3>
+      <ul>
+        <li>Teaching Assistant, University of Alberta, Canada</li>
+        <li>CMPUT 272: Formal Systems and Logic in Computing Science</li>
+        <h4>Responsibilities</h4>
+        <li>Conducting 3-hour seminars to help undergraduates understand formal systems and logic.</li>
+        <li>Grading quizzes and exams, providing feedback, and supporting students with course material.</li>
+      </ul>
+      <h3>Fall 2024</h3>
+      <ul>
+        <li>Teaching Assistant, University of Alberta, Canada</li>
+        <li>CMPUT 272: Formal Systems and Logic in Computing Science</li>
+      </ul>
+      <h3>Winter 2024</h3>
+      <ul>
+        <li>Teaching Assistant, University of Alberta, Canada</li>
+        <li>CMPUT 272: Formal Systems and Logic in Computing Science</li>
+      </ul>
+      <h3>Fall 2023</h3>
+      <ul>
+        <li>Teaching Assistant, University of Alberta, Canada</li>
+        <li>CMPUT 272: Formal Systems and Logic in Computing Science</li>
       </ul>
     </section>
 
-    <section id="service">
-      <h2>Service</h2>
-      <ul class="list">
-        <li>Reviewer: (e.g., PETS student forum, CHI LBW) — add specifics.</li>
-        <li>Volunteer: University events and mentorship programs.</li>
+    <section id="cv">
+      <h2>My Failure Resume</h2>
+      <h3>Summer 2025</h3>
+      <p>I applied for all the scholarships listed below, but did not get any. No problem, will apply again next year.</p>
+      <ul>
+        <li>2025 Walter and Edith (Hughes) Fryers Graduate Scholarship Application</li>
+        <li>2025 Dear Elnaz Graduate Scholarship In Memory Of Women, Life and Freedom Application</li>
+        <li>2025 GRA Rice Graduate Scholarship in Communications Application</li>
+        <li>2025 Jean Isabel Soper Memorial Graduate Scholarship in Science</li>
+        <li>2025 Mojgan Daneshmand Pedram Mousavi and Flight PS752 Memorial Graduate Scholarship Application</li>
+        <li>2025 Molly and Spencer Dier Memorial Scholarship Application</li>
+        <li>2025 Pansy and George Strange Graduate Scholarship Application</li>
       </ul>
+    </section>
+
+    <section id="notes">
+      <h2>Notes</h2>
+      <h2>Course work as an MSc student</h2>
+      <h4>How long is the MSc program at the University of Alberta?</h4>
+      <p>First 5 semesters are guaranteed funding. If you need more, you may get TA or RA depending on supervisor and department.</p>
+      <h4>How many courses do you need to do?</h4>
+      <p>Thesis-based MSc students must take five courses. One mandatory: Research and Teaching Methodology. Leaves four electives.</p>
+      <h4>Do you need to finish courses by a specific time?</h4>
+      <p>Advised to finish within the first year (Fall + Winter). Then summer onwards is research only.</p>
+      <h4>What if I don’t finish in the first year?</h4>
+      <p>You can spread them over up to 4 semesters while also doing research.</p>
+      <h4>How much time is spent on courses vs. research?</h4>
+      <p>Research starts once courses are done. Then nearly all time is on research.</p>
+
+      <h2>TA work</h2>
+      <h4>How many hours do you need to work as a TA?</h4>
+      <p>12 hours per week.</p>
+      <h4>Do you need to do more than 12 hours?</h4>
+      <p>No, but it depends on course prep difficulty. For unfamiliar courses, prep may take longer.</p>
+      <h4>How to avoid this?</h4>
+      <p>Before each term, you fill out a skills form for TA assignment. Be honest. Not selecting many skills will not harm funding.</p>
     </section>
 
     <section id="contact">
       <h2>Contact</h2>
-      <p>Email: <a href="mailto:rabeya.bosri@ualberta.ca">rabeya.bosri@ualberta.ca</a></p>
-      <p>Profiles: <a href="https://scholar.google.com/" target="_blank" rel="noopener">Google Scholar</a> · <a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a> · <a href="https://github.com/rabeya-bosri" target="_blank" rel="noopener">GitHub</a></p>
+      <p>Email: <a href="mailto:bosri@ualberta.cs">bosri@ualberta.cs</a></p>
+      <p>Profiles: <a href="https://scholar.google.ca/citations?view_op=list_works&hl=en&hl=en&user=mUgZ1usAAAAJ&sortby=pubdate" target="_blank">Google Scholar</a> · <a href="https://github.com/rabeya-bosri" target="_blank">GitHub</a></p>
     </section>
 
     <footer>
-      <div>© <span id="y"></span> Rabeya Bosri · Edmonton, Alberta, Canada · Last updated <span id="d"></span></div>
+      <div>© <span id="y"></span> Rabeya Bosri · Edmonton, Alberta, Canada</div>
     </footer>
   </main>
 
   <script>
     const d=new Date();
     document.getElementById('y').textContent = d.getFullYear();
-    document.getElementById('d').textContent = d.toISOString().slice(0,10);
   </script>
 </body>
 </html>
