@@ -360,11 +360,11 @@ body{
     overflow-x:hidden;
 }
 
-.cat{
-    position:fixed;
-    z-index:5;
-    pointer-events:none;
-    opacity:.96;
+.cat {
+  position: fixed;
+  z-index: 1001;
+  pointer-events: none;
+  opacity: .96;
 }
 
 .cat-top{
@@ -405,12 +405,12 @@ body{
 
 /* ---------- Paw Prints ---------- */
 
-.paw{
-    position:fixed;
-    color:#8d8d8d55;
-    font-size:20px;
-    pointer-events:none;
-    z-index:4;
+.paw {
+  position: fixed;
+  color: #8d8d8d55;
+  font-size: 20px;
+  pointer-events: none;
+  z-index: 1001;
 }
 
 .paw-1{
