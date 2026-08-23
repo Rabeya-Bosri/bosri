@@ -49,11 +49,11 @@ a:hover {
 .topbar-inner {
   max-width: 1250px;
   margin: 0 auto;
-  padding: 0 34px;
-  height: 76px;
+  padding: 0 16px;    /* Shrunk from 34px */
+  height: 50px;       /* Shrunk from 76px */
   display: flex;
   align-items: center;
-  gap: 36px;
+  gap: 16px;          /* Shrunk from 36px */
 }
 
 .brand {
