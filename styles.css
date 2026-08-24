@@ -1,7 +1,7 @@
 :root {
   --primary: #2e7d32;
   --primary-dark: #256428;
-  --accent: #256428;
+   --accent: #256428;
   --background: #FFFFFF;
   --surface: #ffffff;
   --surface-soft: #FFFFFF; 
@@ -41,9 +41,9 @@ a:hover {
   position: sticky;
   top: 0;
   z-index: 1000;
-  background: #f9fded;
+  background:#FFFFFF;
   backdrop-filter: blur(10px);
-  border-bottom: 2px solid var(--border);
+  border-bottom: none solid var(--border);
 }
 
 .topbar-inner {
@@ -463,4 +463,90 @@ body{
 .paw-5{
     bottom:60px;
     left:420px;
+}
+
+
+/* 3-Column Grid Container */
+.blog-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 16px;
+  margin-top: 20px;
+}
+
+/* Compact Card Styling */
+.blog-card {
+  position: relative;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  padding: 16px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 130px;
+  transition: box-shadow 0.2s ease;
+}
+
+/* Card Hover State */
+.blog-card:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+/* Post Title */
+.blog-card h3 {
+  margin: 0 24px 6px 0; /* Leaves space for the pin icon */
+  font-size: 1.15rem;
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+.blog-card h3 a {
+  color: #000000;
+  text-decoration: none;
+}
+
+/* Full Card Clickable Overlay */
+.blog-card h3 a::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+/* Small Subtitle/Excerpt */
+.blog-excerpt {
+  margin: 0 0 12px 0;
+  font-size: 0.8rem;
+  color: #718096;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; /* Adds the "..." truncation */
+}
+
+/* Card Footer Container */
+.blog-meta-footer {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.75rem;
+  color: #718096;
+}
+
+/* Bullet separator */
+.blog-meta-footer .separator {
+  color: #cbd5e1;
+}
+
+/* Pin Icon in Top-Right Corner */
+.pin-icon {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  font-size: 0.75rem;
+  color: #000000;
 }
